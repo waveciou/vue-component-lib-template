@@ -1,0 +1,27 @@
+{
+  "name": "vue-compoent-lib-template",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/bundle.js",
+  "module": "./dist/bundle.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev:example": "npm -C example run dev",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "npm -C example run build && npm -C example run preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vite-plugin-dts": "^1.7.1",
+    "vue-tsc": "^1.0.9"
+  },
+  "dependencies": {
+    "vue": "^3.2.41"
+  }
+}
