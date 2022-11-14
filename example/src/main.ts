@@ -3,6 +3,7 @@ import './style.css'
 import App from './App.vue'
 import MyButton from "@lib/core";
 
-const app = createApp(App); 
-app.use(MyButton); // 新增
+const app = createApp(App);
+
+app.use(MyButton);
 app.mount("#app");

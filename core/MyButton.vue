@@ -3,11 +3,11 @@
 </template>
 
 <script lang="ts" setup>
-export interface MyButtonProps {
-  label: string;
-}
+  export interface MyButtonProps {
+    label: string;
+  }
 
-withDefaults(defineProps<MyButtonProps>(), {
-  label: "默认按钮",
-});
+  withDefaults(defineProps<MyButtonProps>(), {
+    label: "預設按鈕",
+  });
 </script>
